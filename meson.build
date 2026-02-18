@@ -16,7 +16,7 @@ if get_option('buildtype').startswith('debug')
 endif
 
 # Dependencies
-merian_subp = subproject('merian')
+merian_subp = subproject('merian', default_options: ['performance_profiling=true'])
 merian = merian_subp.get_variable('merian_dep')
 shader_generator = merian_subp.get_variable('shader_generator')
 

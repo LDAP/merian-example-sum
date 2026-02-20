@@ -20,7 +20,7 @@ int main() {
 
     // Setup Vulkan context.
     const merian::ContextCreateInfo context_create_info{
-        .vulkan_features = merian::VulkanFeatures({"hostQueryReset", "pushDescriptor"}),
+        .features = merian::VulkanFeatures({"hostQueryReset", "pushDescriptor"}),
         .context_extensions = context_extensions,
         .application_name = "merian-example",
     };

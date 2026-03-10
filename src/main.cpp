@@ -15,7 +15,7 @@ int main() {
 
     std::vector<std::string> context_extensions = {"merian-resources", "merian-glsl-compiler"};
 #ifndef NDEBUG
-    context_extensions.push_back("vk_debug_utils");
+    context_extensions.push_back("merian-validation-layers");
 #endif
 
     // Setup Vulkan context.
